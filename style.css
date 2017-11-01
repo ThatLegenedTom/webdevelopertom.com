@@ -60,6 +60,22 @@ h4 {
   margin-top: 0;
 }
 
+/*footer*/
+footer {
+  height: 225px;
+  background-color: black;
+  width: 100%;
+}
+
+.contact {
+  width: 300px;
+  color: white;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
 @media only screen and (max-width: 575px) {
   h1 {
     font-size: 45px;
