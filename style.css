@@ -60,6 +60,19 @@ h4 {
   margin-top: 0;
 }
 
+@media only screen and (max-width: 575px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2  {
+    font-size: 1em;
+  }
+  h4 {
+    font-size: 0.75em;
+  }
+}
+
+/*animations*/
 @keyframes fadein {
   100% {
     opacity: 1;
