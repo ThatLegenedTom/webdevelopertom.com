@@ -1,14 +1,14 @@
-
+/*colors: White #E8EEF1,Blue Grotto #43B0F1, Royal Blue #057DCD, Navy Blue #1E3D58  */
 
 body {
-  background-color: #31B0D5;
+  background-color: #057DCD;
   margin: 0;
   /*height: 1000px;*/
 }
 
  /*head*/
 nav {
-  background-color: #31B0D5;
+  background-color: #057DCD;
   display: flex;
   justify-content: center;
   top: 0;
@@ -18,7 +18,7 @@ nav {
 }
 
 nav li {
-  background-color: #31B0D5;
+  background-color: #057DCD;
   opacity: 0;
   animation: fadein 1s 1s forwards;
   list-style-type: none;
@@ -60,10 +60,28 @@ h4 {
   margin-top: 0;
 }
 
+/*about*/
+.about {
+  width: 100%;
+  height: 250px;
+  background-color: #43B0F1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutbox {
+  height: 200px;
+  border: solid #1E3D58 2px;
+  background-color: #E8EEF1;
+  width:70%;
+  text-align: center;
+}
+
 /*footer*/
 footer {
   height: 225px;
-  background-color: black;
+  background-color: #1E3D58;
   width: 100%;
 }
 
@@ -72,18 +90,23 @@ footer {
   color: white;
 }
 
+.contact p {
+  margin-top: 0;
+}
+
 .contact form {
   display: flex;
   flex-direction: column;
 }
+
 @media only screen and (max-width: 575px) {
-  h1 {
+  #name {
     font-size: 45px;
   }
-  h2  {
+  #title  {
     font-size: 1em;
   }
-  h4 {
+  #location {
     font-size: 0.75em;
   }
 }
