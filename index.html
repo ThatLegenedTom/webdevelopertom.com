@@ -6,14 +6,15 @@
   <title>WebDev Tom</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://use.fontawesome.com/43d98386fa.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
 </head>
 <body>
   <!-- navbar  -->
   <header>
     <nav>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Skills</a></li>
-      <li><a href="#">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#">Contact</a></li>
     </nav>
   </header>
@@ -28,21 +29,62 @@
   </div>
 
  <!-- about -->
+ <div id="about"></div>
  <section class="about">
    <div class="aboutbox">
      <h3>About</h3>
      <p>Tom is a self-taught web developer from New Zealand.
-       After working in retail for just over 10 years, Tom thought it was time for a career change and has been learning web development after work since the start of 2017.
-       Asides from learning to code in his free time, Tom enjoys helping his partner on her blog, <a href="www.attackongeek.com" target="_blank">Attack on Geek</a>, and streaming games for Microsoft's New Zealand ExpertZone channel.</p>
+       After working in retail for just over 10 years, Tom thought it was time for a career change and has been learning web development after work since the start of 2017.</p>
        <p>He also doesn't like talking about himself in the third person...</p>
    </div>
-
  </section>
+ <!-- Skills -->
+ <div id="skills"></div>
+ <section class="skill">
+   <div class="skillbox">
+     <h3>Skills</h3>
+     <div class="skillslist">
+       <li>HTML</li>
+       <li>CSS</li>
+       <li>Sass</li>
+       <li>JavaScript</li>
+       <li>jQuery</li>
+     </div>
+   </div>
+ </section>
+
+<!-- Projects -->
+<div id="projects"></div>
+<section class="projects">
+  <div class="projectbox">
+    <div class="project1">
+      <img class="projectpic"src="http://via.placeholder.com/250x350" alt="">
+      <div class="projecttext">
+        <h3>Project Title</h3>
+        <p>Description</p>
+      </div>
+    </div>
+    <div class="project2">
+      <img class="projectpic"src="http://via.placeholder.com/250x350" alt="">
+      <div class="projecttext">
+        <h3>Project Title</h3>
+        <p>Description</p>
+      </div>
+    </div>
+    <div class="project3">
+      <img class="projectpic"src="http://via.placeholder.com/250x350" alt="">
+      <div class="projecttext">
+        <h3>Project Title</h3>
+        <p>Description</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 <!-- footer -->
   <footer>
-    <div class="contact">
+    <!-- <div class="contact">
       <p>Feel free to contact me:</p>
       <form class="" action="index.html" method="post">
         <input type="text" name="firstname" placeholder="Name">
@@ -50,7 +92,7 @@
         <textarea name="message" rows="3" cols="10"></textarea>
         <button type="button" name="button">Submit</button>
       </form>
-    </div>
+    </div> -->
   </footer>
 </body>
 </html>
