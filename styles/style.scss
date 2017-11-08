@@ -1,61 +1,70 @@
-/*colors: White #E8EEF1,Blue Grotto #43B0F1, Royal Blue #057DCD, Navy Blue #1E3D58  */
+$header-font: 'Montserrat', serif;
+$text-font: 'Merriweather', serif;
+$bg-color: #057DCD;
+$txt-color: #E8EEF1;
+$lgt-blue: #43B0F1;
+$drk-blue: #1E3D58;
 
 body {
-  background-color: #057DCD;
+  background-color: $bg-color;
   margin: 0;
   font-size: 100%;
 }
 
-body h1, h2, h3, h4, li {
-  font-family: "Montserrat", serif;
+h1, h2, h3, h4, li {
+  font-family: $header-font;
 }
 
-body p {
-  font-family: 'Merriweather', serif;
+p {
+  font-family: $text-font;
 }
 
- /*head*/
 nav {
-  background-color: #057DCD;
+  background-color: $bg-color;
   display: flex;
   justify-content: center;
   top: 0;
   width: 100%;
   position: fixed;
   z-index: 2;
-}
 
-nav li {
-  background-color: #057DCD;
-  opacity: 0;
-  animation: fadein 1s 1s forwards;
-  list-style-type: none;
-  padding: 10px;
-}
+  li {
+    background-color: $bg-color;
+    opacity: 0;
+    animation: fadein 1s 1s forwards;
+    list-style-type: none;
+    padding: 10px;
+  }
 
-nav a {
-  font-size: 1.3em;
-  text-decoration: none;
-  opacity: 0.85;
-  color: white;
+  a {
+    font-size: 1.3em;
+    text-decoration: none;
+    opacity: 0.85;
+    color: $txt-color;
+    :hover {
+      opacity: 1;
+    }
+  }
+
 }
 
 nav a:hover {
   opacity: 1;
 }
- /*intro text */
 
+// intro
 .intro {
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: $txt-color;
   opacity: 0;
   margin-top: 100px;
   animation: 1s slidefade 0.5s forwards;
 }
+
 h1 {
   font-size: 5em;
   margin:0;
@@ -84,6 +93,7 @@ i.fa-github:hover {
   color: #bd2c00;
 }
 
+
 /*about*/
 #about {
   padding-bottom: 50px;
@@ -99,8 +109,8 @@ i.fa-github:hover {
 
 .aboutbox {
   min-height: 200px;
-  border: solid #1E3D58 2px;
-  background-color: #E8EEF1;
+  border: solid $drk-blue 2px;
+  background-color: $txt-color;
   width:70%;
   text-align: center;
   padding: 10px;
@@ -111,7 +121,7 @@ i.fa-github:hover {
 .skill {
   width: 100%;
   min-height: 250px;
-  background-color: #43B0F1;
+  background-color: $lgt-blue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,8 +129,8 @@ i.fa-github:hover {
 
 .skillbox {
   min-height: 120px;
-  border: solid #1E3D58 2px;
-  background-color: #E8EEF1;
+  border: solid $drk-blue 2px;
+  background-color: $txt-color;
   width:70%;
   text-align: center;
   padding: 10px;
@@ -137,9 +147,9 @@ i.fa-github:hover {
   list-style: none;
   padding: 10px;
   margin: 10px;
-  background: #057DCD;
-  color: #E8EEF1;
-  border: solid black 1px;
+  background: $bg-color;
+  color: $txt-color;
+  border: solid $drk-blue 1px;
 }
 
 /*projects*/
@@ -171,30 +181,32 @@ i.fa-github:hover {
 
 .projecttext {
   height: 30%;
-  border: solid black 1px;
+  border: solid $drk-blue 1px;
   width: 65%;
   padding-left: 15px;
   margin-right: 30px;
-  background-color: #E8EEF1;
+  background-color: $txt-color;
 }
 
 /*footer*/
 footer {
   height: 225px;
-  background-color: #1E3D58;
+  background-color: $drk-blue;
   width: 100%;
+
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    padding:10px;
+  }
+
+  .footer-icons i {
+    margin: 10px;
+    color: #fff;
+  }
 }
 
-.footer-icons {
-  display: flex;
-  justify-content: center;
-  padding:10px;
-}
 
-.footer-icons i {
-  margin: 10px;
-  color: #fff;
-}
 
 
 @media only screen and (max-width: 575px) {
@@ -219,6 +231,7 @@ footer {
     margin-bottom: 15px;
   }
 }
+
 
 /*animations*/
 @keyframes fadein {
