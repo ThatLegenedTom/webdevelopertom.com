@@ -1,7 +1,6 @@
 body {
   background-color: #057DCD;
-  margin: 0;
-  font-size: 100%; }
+  margin: 0; }
 
 h1, h2, h3, h4, li {
   font-family: "Montserrat", serif; }
@@ -107,19 +106,18 @@ i.fa-github:hover {
   text-align: center;
   padding: 10px;
   margin: 30px; }
+  .skillbox li {
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    background: #057DCD;
+    color: #E8EEF1;
+    border: solid #1E3D58 1px; }
 
 .skillslist {
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
-
-.skillbox li {
-  list-style: none;
-  padding: 10px;
-  margin: 10px;
-  background: #057DCD;
-  color: #E8EEF1;
-  border: solid #1E3D58 1px; }
 
 /*projects*/
 .projects {

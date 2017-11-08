@@ -8,7 +8,6 @@ $drk-blue: #1E3D58;
 body {
   background-color: $bg-color;
   margin: 0;
-  font-size: 100%;
 }
 
 h1, h2, h3, h4, li {
@@ -135,21 +134,21 @@ i.fa-github:hover {
   text-align: center;
   padding: 10px;
   margin: 30px;
+
+  li {
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    background: $bg-color;
+    color: $txt-color;
+    border: solid $drk-blue 1px;
+  }
 }
 
 .skillslist {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.skillbox li {
-  list-style: none;
-  padding: 10px;
-  margin: 10px;
-  background: $bg-color;
-  color: $txt-color;
-  border: solid $drk-blue 1px;
 }
 
 /*projects*/
