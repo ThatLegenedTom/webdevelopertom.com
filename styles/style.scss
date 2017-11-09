@@ -179,6 +179,36 @@ nav a:hover {
   }
 }
 
+// contact
+.contact {
+  background-color: $lgt-blue;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    margin: 20px;
+    h4 {
+      padding-right: 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      margin-bottom: 0;
+      input, textarea {
+        width: 100%;
+        margin: 7px;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+
 /*footer*/
 footer {
   height: 225px;
